@@ -4,11 +4,11 @@ import {Text,View} from "react-native"
 export default function SucessoScreen(){
     return(
         <SafeAreaView>
-            <view>
-                <text>
+            <View>
+                <Text>
                     Sucesso Screen
-                </text>
-            </view>
+                </Text>
+            </View>
         </SafeAreaView>
 
 

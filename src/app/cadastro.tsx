@@ -4,11 +4,11 @@ import {Text,View} from "react-native"
 export default function cadastroScreen(){
     return(
         <SafeAreaView>
-            <view>
-                <text>
+            <View>
+                <Text>
                     cadastro Screen
-                </text>
-            </view>
+                </Text>
+            </View>
         </SafeAreaView>
 
 

@@ -4,11 +4,11 @@ import {Text,View} from "react-native"
 export default function PreviewScreen(){
     return(
         <SafeAreaView>
-            <view>
-                <text>
+            <View>
+                <Text>
                      Preview Screen
-                </text>
-            </view>
+                </Text>
+            </View>
         </SafeAreaView>
 
 
