@@ -7,7 +7,7 @@ import {Button} from "../components/Buttons";
 export default function HomeScreen() {
     return (
         <SafeAreaView>
-            {/* acrescentar icone */}
+            {/* acrescentar icone depois */}
             <View style={styles.container}>
                 <View style={styles.headerContainer} >
                     <Text style={styles.logo}>

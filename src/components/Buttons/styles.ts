@@ -35,7 +35,7 @@ export const styleSecondary = StyleSheet.create(
     }
     }
 )
-export const styleoutline = StyleSheet.create(
+export const styleOutline = StyleSheet.create(
     {
       buttonContainer:{
         ...stylePrimary.buttonContainer,
@@ -57,5 +57,5 @@ export const styleoutline = StyleSheet.create(
 export const styles = {
     primary: stylePrimary,
     secondary: styleSecondary,
-    outline:stylePrimary
+    outline:styleOutline
 } as const
