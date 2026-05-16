@@ -1,7 +1,7 @@
 import { Text, StyleSheet } from "react-native";
 import { THEME } from "../../styles/constants";
 
-export const styles = StyleSheet.create(
+export const stylePrimary = StyleSheet.create(
     {
       buttonContainer:{
         backgroundColor:THEME.colors.primary,
@@ -20,4 +20,42 @@ export const styles = StyleSheet.create(
     }
     }
 )
-  
+
+export const styleSecondary = StyleSheet.create(
+    {
+      buttonContainer:{
+        ...stylePrimary.buttonContainer,
+        backgroundColor:"transparent"
+        
+
+    },
+    buttonText:{
+      ...stylePrimary.buttonText,
+     color: THEME.colors.primary
+    }
+    }
+)
+export const styleoutline = StyleSheet.create(
+    {
+      buttonContainer:{
+        ...stylePrimary.buttonContainer,
+        backgroundColor:"transparent",
+        borderColor:THEME.colors.primary
+        
+
+    },
+    buttonText:{
+      ...stylePrimary.buttonText,
+     color: THEME.colors.primary
+    }
+    }
+)
+
+
+
+ 
+export const styles = {
+    primary: stylePrimary,
+    secondary: styleSecondary,
+    outline:stylePrimary
+} as const

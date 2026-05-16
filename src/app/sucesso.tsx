@@ -7,18 +7,24 @@ import { Button } from "../components/Buttons";
 export default function SucessoScreen() {
     return (
         <SafeAreaView>
-            {/* acrescentar icone */}
+            
             <View style={styles.container}>
+
                 <View style={styles.headerContainer} >
-                    <Text>
-                        DevCard
+                    <Text style={styles.title}>
+                        Cartão criado com sucesso!
                     </Text>
-                    <Text>
-                        Seu cartão de visita digital de dev mobile
+                    <Text style={styles.subtitle}>
+                        Seu cartão de visita digital está pronto.
+                        Compartilher com a galera!
                     </Text>
 
                 </View>
-                 <Button label="Criar meu cartão"/>
+                <View style={styles.footerContainer}>
+                    <Button label="Criar outro cartão"/>
+                    <Button label="Voltar ao início" variant="secondary"/>
+
+                </View>
             </View>
         </SafeAreaView>
 
@@ -39,20 +45,31 @@ const styles = StyleSheet.create({
         flexDirection:"column",
         justifyContent:"center",
         alignItems:"center",
-        height: 750
+        height: 650,
+        gap:12
     },
-    logo:{
-        color:"#6547e8",
-        fontWeight: "bold",
-        fontSize:56
+
+     title:{
+         color:THEME.colors.heading,
+        fontWeight:"bold",
+        fontSize:THEME.text.heading.h2,
+        width:200,
+        textAlign:"center" 
     },
     subtitle:{
-        color:"#737377",
+        color:THEME.colors.subtitle,
         fontWeight:"400",
         fontSize:16,
         width:200,
         textAlign:"center"    
     },
-  
+   
+    footerContainer:{
+        flexDirection:"column",
+        gap:12
+
+
+
+  }
 
 })
