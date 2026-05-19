@@ -2,6 +2,8 @@
 
 Aplicativo mobile desenvolvido com React Native e Expo Router para criação de cartões digitais de desenvolvedor.
 
+Autora: Ana Júçia da Silva Mello Soares
+
 ---
 
 # Tecnologias utilizadas
@@ -10,7 +12,7 @@ Aplicativo mobile desenvolvido com React Native e Expo Router para criação de 
 - Expo
 - Expo Router
 - TypeScript
-- StyleSheet
+
 
 ---
 
@@ -25,106 +27,44 @@ Aplicativo mobile desenvolvido com React Native e Expo Router para criação de 
 
 ---
 
-# Instalação
-
-```bash
-npm install
-```
-
----
-
-# Executando o projeto
-
-```bash
-npx expo start
-```
-
----
-
 # Estrutura de telas
 
 ## Home
 
-<p align="center">
-  <img src="./assets/index.png" width="250" />
-</p>
-
 Tela inicial do aplicativo.
+
+<img width="385" height="857" alt="Captura de tela 2026-05-18 223450" src="https://github.com/user-attachments/assets/dddddd0a-90c1-4746-b369-0ae82379272b" />
 
 ---
 
 ## Cadastro
 
-<p align="center">
-  <img src="./assets/cadastro.png" width="250" />
-</p>
-
 Formulário completo com validações e seleção de cor do cartão.
+
+<img width="397" height="843" alt="Captura de tela 2026-05-18 223458" src="https://github.com/user-attachments/assets/91bfd704-fa6a-4000-8982-1d66ebe49f4c" />
+
 
 ---
 
 ## Preview
 
-<p align="center">
-  <img src="./assets/preview.png" width="250" />
-</p>
-
 Visualização final do cartão criado.
+
+<img width="390" height="844" alt="Captura de tela 2026-05-18 223526" src="https://github.com/user-attachments/assets/dd9808af-37a7-4eb8-8315-431f1651d570" />
 
 ---
 
 ## Sucesso
 
-<p align="center">
-  <img src="./assets/sucesso.png" width="250" />
-</p>
-
 Tela exibida após finalizar o cartão.
+
+<img width="403" height="839" alt="Captura de tela 2026-05-18 223539" src="https://github.com/user-attachments/assets/d5bedf91-20ed-4abd-8859-a91e133b2723" />
 
 ---
 
 # Navegação
 
 O projeto utiliza Expo Router para navegação entre páginas.
-
-Exemplo:
-
-```tsx
-router.push("/preview")
-```
-
-Enviando parâmetros:
-
-```tsx
-router.push({
-  pathname: "/preview",
-  params: {
-    nome,
-    cargo,
-  },
-})
-```
-
----
-
-# Como adicionar as imagens
-
-Coloque os prints dentro da pasta:
-
-```txt
-assets/
-```
-
-Renomeie para:
-
-```txt
-index.png
-cadastro.png
-preview.png
-sucesso.png
-```
-
----
 
 # Autor
 
