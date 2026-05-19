@@ -1,6 +1,6 @@
 # DevCard
 
-Aplicativo mobile desenvolvido com React Native e Expo Router para criação de cartões digitais de desenvolvedor.
+Aplicativo mobile desenvolvido com React Native e Expo Router para criação de cartões digitais.
 
 Autora: Ana Júlia da Silva Mello Soares
 
