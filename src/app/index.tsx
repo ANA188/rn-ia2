@@ -3,13 +3,17 @@ import { Text, View, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { THEME } from "../styles/constants";
 import {Button} from "../components/Buttons";
+import { useRouter } from "expo-router";
 
-export default function HomeScreen() {
+
+export default function Home() {
+  const router = useRouter();
     return (
         <SafeAreaView>
             {/* acrescentar icone depois */}
             <View style={styles.container}>
                 <View style={styles.headerContainer} >
+                     <Ionicons name="card" size={90} color="#6547e8" />
                     <Text style={styles.logo}>
                         DevCard
                     </Text>
@@ -18,7 +22,7 @@ export default function HomeScreen() {
                     </Text>
 
                 </View>
-                 <Button label="Criar meu cartão"/>
+                 <Button label="Criar meu cartão" onPress={() => router.push("/cadastro")} />
             </View>
         </SafeAreaView>
 
@@ -26,10 +30,11 @@ export default function HomeScreen() {
     )
 }
 
+
 const styles = StyleSheet.create({
     container: {
         flexDirection:"column",
-        backgroundColor:"read",
+        backgroundColor:"",
         height:"100%",
         alignContent:"center",
         paddingHorizontal:24,
@@ -39,7 +44,7 @@ const styles = StyleSheet.create({
         flexDirection:"column",
         justifyContent:"center",
         alignItems:"center",
-        height: 650
+        height: 700
     },
     logo:{
         color:THEME.colors.primary,

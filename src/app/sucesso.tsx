@@ -3,14 +3,17 @@ import { Text, View, StyleSheet } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { THEME } from "../styles/constants";
 import { Button } from "../components/Buttons";
+import { useRouter } from "expo-router";
 
 export default function SucessoScreen() {
+      const router = useRouter();
     return (
         <SafeAreaView>
             
             <View style={styles.container}>
 
                 <View style={styles.headerContainer} >
+                    <Ionicons name="checkmark-circle" size={200} color="green" />
                     <Text style={styles.title}>
                         Cartão criado com sucesso!
                     </Text>
@@ -21,8 +24,8 @@ export default function SucessoScreen() {
 
                 </View>
                 <View style={styles.footerContainer}>
-                    <Button label="Criar outro cartão"/>
-                    <Button label="Voltar ao início" variant="secondary"/>
+                    <Button label="Criar outro cartão" onPress={() => router.push("/cadastro")}/>
+                    <Button label="Voltar ao início" variant="secondary"  onPress= {() => router.push('/')}/>
 
                 </View>
             </View>
@@ -35,7 +38,6 @@ export default function SucessoScreen() {
 const styles = StyleSheet.create({
     container: {
         flexDirection:"column",
-        backgroundColor:"read",
         height:"100%",
         alignContent:"center",
         paddingHorizontal:24,

@@ -1,68 +1,72 @@
+import { StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Text, View, StyleSheet } from "react-native";
-
-import { THEME } from "../styles/constants";
 import { Button } from "../components/Buttons";
+import { THEME } from "../styles/constants";
 import { DevCard } from "../components/DevCard";
+import { useLocalSearchParams, useRouter } from "expo-router";
+import { Form } from "./cadastro";
 
-export default function PreviewScreen() {
+export default function Preview() {
+  const router = useRouter();
 
-    return (
-        <SafeAreaView style={styles.safeContainer}>
+  const params = useLocalSearchParams() as unknown as Form;
 
-            <View style={styles.container}>
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={styles.container}>
+        <View style={styles.headerContainer}>
+          <Text style={styles.title}>Seu Cartão</Text>
+        </View>
 
-                <View style={styles.headerContainer}>
-                    <Text style={styles.title}>
-                        Seu cartão
-                    </Text>
-                </View>
+        {!!params && <DevCard data={params} />}
 
-                <DevCard />
+        <View style={styles.footerContainer}>
+          <Button
+            variant="outline"
+            label="Editar"
+            onPress={() =>
+              router.push({
+                pathname: "/cadastro",
+                params,
+              })
+            }
+          />
 
-                <View style={styles.footerContainer}>
-                    <Button
-                        label="Editar"
-                        variant="outline"
-                     
-                    />
-
-                    <Button
-                        label="Finalizar"
-                    />
-                </View>
-
-            </View>
-
-        </SafeAreaView>
-    )
+          <Button
+            label="Finalizar"
+            onPress={() => router.push("/sucesso")}
+          />
+        </View>
+      </View>
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "center",
+    paddingHorizontal: 24,
+    gap: 12,
+  },
 
-    safeContainer: {
-        flex: 1
-    },
+  headerContainer: {
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "flex-start",
+    gap: 16,
+  },
 
-    container: {
-        flex: 1,
-        paddingHorizontal: 24,
-        justifyContent: "center",
-        gap: 24
-    },
+  title: {
+    color: THEME.colors.heading,
+    fontWeight: "bold",
+    fontSize: THEME.text.heading.h3,
+    textAlign: "center",
+  },
 
-    headerContainer: {
-        gap: 16
-    },
-
-    title: {
-        color: THEME.colors.heading,
-        fontWeight: "bold",
-        fontSize: THEME.text.heading.h2,
-    },
-
-    footerContainer: {
-        gap: 12
-    }
-
-})
+  footerContainer: {
+    flexDirection: "column",
+    gap: 12,
+  },
+});

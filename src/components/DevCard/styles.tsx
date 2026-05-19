@@ -77,7 +77,7 @@ export const styles = StyleSheet.create({
         letterSpacing: 1
     },
 
-    cardTextgroup: {
+    cardTextGroup: {
         justifyContent: "center",
         alignItems: "center",
         gap: 4
