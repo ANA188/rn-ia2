@@ -21,7 +21,7 @@ Autora: Ana Júlia da Silva Mello Soares
 - Cadastro de desenvolvedor
 - Validação de formulário
 - Seleção de cor do cartão
-- Preview do cartão
+- Preview do cartão (permitindo alteração)
 - Navegação entre telas
 - Tela de sucesso
 
