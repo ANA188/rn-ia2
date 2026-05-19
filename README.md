@@ -67,7 +67,7 @@ Tela exibida após finalizar o cartão.
 
 O projeto utiliza Expo Router para navegação entre páginas.
 
-# Autor
+# Objetivo
 
 Projeto desenvolvido para fins acadêmicos e prática de React Native.
 
