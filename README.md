@@ -2,7 +2,7 @@
 
 Aplicativo mobile desenvolvido com React Native e Expo Router para criação de cartões digitais de desenvolvedor.
 
-Autora: Ana Júçia da Silva Mello Soares
+Autora: Ana Júlia da Silva Mello Soares
 
 ---
 
