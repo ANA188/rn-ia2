@@ -50,7 +50,8 @@ Formulário completo com validações e seleção de cor do cartão.
 
 Visualização final do cartão criado.
 
-<img width="390" height="844" alt="Captura de tela 2026-05-18 223526" src="https://github.com/user-attachments/assets/dd9808af-37a7-4eb8-8315-431f1651d570" />
+<img width="425" height="869" alt="Captura de tela 2026-05-18 224635" src="https://github.com/user-attachments/assets/be243664-4861-4527-8f65-07fde2a969e2" />
+
 
 ---
 
